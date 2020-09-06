@@ -1,4 +1,6 @@
 <script>
+  export let charities;
+
   function calculatedFunded(pledged, target) {
     return Math.round((1 / (target / pledged)) * 100);
   }
@@ -18,11 +20,6 @@
 <style>
   .xs-list-with-content li {
     font-size: 10px !important;
-  }
-
-  .show {
-    display: block;
-    background-color: rgba(0, 0, 0, 0.5);
   }
 </style>
 
